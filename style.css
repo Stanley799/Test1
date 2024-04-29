@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;/*the code removes the margin*/
+    
+    }
+    
+    body{
+        background-color: rgb(196, 203, 207);
+    }
+    
+    
+    nav{ 
+        width: 100%;
+        height: 100px;
+        background-color: rgb(29, 28, 28);
+       }
+    
+    
+    
+    ul li {/*list item that helps to move to the individual links inside the list*/
+    list-style: none;
+    display: inline-block;/*puts the links next to each other*/
+    
+    line-height: 100px;
+    }
+    
+    ul li a {/*helps to style the actual text inside the link*/
+    text-decoration: none;/*removes the underline on the links*/
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(34, 206, 186);
+    padding: 0 20px;
+    }
