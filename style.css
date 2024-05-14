@@ -31,3 +31,11 @@
     color: rgb(34, 206, 186);
     padding: 0 20px;
     }
+
+body p
+{
+ text-align: center;
+ text-decoration-style: solid;
+ text-decoration-color: rgb(52, 19, 19);
+
+}
