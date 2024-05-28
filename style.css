@@ -118,7 +118,7 @@ margin-left: 20px;
 
 /*editting the divisions*/
 .contact-div{
-    width: 300px;
+    width: 400px;
     margin-top: 100px;
     
 }
@@ -164,4 +164,7 @@ margin-left: 20px;
 .image-7{
     width: 300px;
     display: inline-block;
+}
+.home-div{
+    
 }
