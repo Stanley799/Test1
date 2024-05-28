@@ -20,11 +20,12 @@
         padding-top: 5px;
         padding-bottom: 5px;
        }
-/*Adding a hover effect to the navbar*/
-.main-bar :hover{
-    background-color: rgb(14, 38, 40);
-}
+/*Adding a hover effect to the navbar only when you point at the links*/
+.main-bar a:hover{
+    background-color: rgba(17, 16, 16, 0.755);
+    border-radius: 40%;
 
+}
 
 
     
@@ -61,12 +62,15 @@ ul li:first-child{
     align-items:center;
     }
 
+
+
+
 body p
 {
  text-align: center;
  text-decoration-style: solid;
  text-decoration-color: rgb(52, 19, 19);
-
+background-color: ;
 }
 
 section
@@ -103,8 +107,22 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 .Login
 {
-background-color: #3f2a09;
+background-color: #2f2412;
 border-color: rgb(34, 206, 186);
 color: rgb(34, 206, 186);
+border-radius: 20px;
+margin-left: 20px;
 
+
+}
+
+/*editting the divisions*/
+.contact-div{
+    width: 300px;
+    margin-top: 100px;
+    
+}
+.order-div{
+    width: 300px;
+    margin-top: 100px;
 }
