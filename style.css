@@ -8,16 +8,18 @@
     }
     .main-bar{ 
         position: fixed;
-        top: 0;
-        left: 0;
+        padding-left: 10%;
+        padding-right: 10%;
         width: 100%;
         height: 70px;
         background-color: rgba(0, 0, 0, 0.71);
-        border-radius: 50px;
         box-sizing: border-box;
         z-index: 9999;
         padding-top: 5px;
         padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
        }
 /*Adding a hover effect to the navbar only when you point at the links*/
 .main-bar a:hover{
@@ -27,18 +29,17 @@
 }
 
 
+.navigationdiv/*edits the division for the navigation*/
+{
+display: flex; align-items: center; justify-content: space-between;
+}
+
+.logo a{
+    font-size: 25px; font-weight: bold; color: grey; text-decoration: none;
+}
+
     
-    body
-    {
-padding: top 60px ;
-min-height: 100vh;
-    }
-
-
-
-
-    
-    ul li {/*list item that helps to move to the individual links inside the list*/
+   .navigationdiv ul li {/*list item that helps to move to the individual links inside the list*/
     list-style: none;
     height:50px;
 
@@ -53,15 +54,21 @@ ul li:first-child{
     
     ul li a  {/*helps to style the actual text inside the link*/
     text-decoration: none;/*removes the underline on the links*/
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(34, 206, 186);
-    padding: 0 20px;
+    padding:  20px;
     display: flex;
     align-items:center;
     }
 
-
+    body
+    {
+padding: top 60px ;
+min-height: 100vh;
+    }
 
 
 body p
@@ -104,22 +111,28 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 550px;
 }
 
-.Login
+button
 {
     background-color: #2f2412;
-    border-color: rgb(34, 206, 186);
-    color: rgb(34, 206, 186);
-    border-radius: 20px;
-    margin-left: 20px;
-    height: 40px;
-    width: 60px;
-    padding: 9px 25px;
-    border: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    width: 90px;
+    padding: 10px;
     cursor: pointer;
-    text
-    
+   
+}
+button a /*editting the button text*/
+{
+    color: rgb(34, 206, 186);
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
 
 }
+
+
+
+
 
 /*editting the divisions*/
 .contact-div{
