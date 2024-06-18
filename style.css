@@ -32,6 +32,7 @@
 .navigationdiv/*edits the division for the navigation*/
 {
 display: flex; align-items: center; justify-content: space-between;
+
 }
 
 .logo a{
@@ -137,20 +138,25 @@ button a /*editting the button text*/
 /*editting the divisions*/
 .contact-div{
     width: 400px;
+    margin-top: 80px;
     
     
 }
 .order-div{
     width: 300px;
+    margin-top: 80px;
     
 }
 .about-div{
     width: 300px;
+    margin-top: 80px;
    
 }
 .image-div{
     width: fit-content;
-    vertical-align: top;}
+    vertical-align: top;
+    margin-top: 80px;
+}
 .image-1{
     width: 300px;
     display: inline-block ;
@@ -184,3 +190,43 @@ button a /*editting the button text*/
 .home-div{
     
 }
+.field-group{
+    width: 600px;
+    position: relative;
+    margin-top: 100px;
+}
+.input-field{
+    width: 100%;
+    outline: 0;
+    border: 2px solid #999999;
+    border-radius: 3px;
+    padding:10px ;
+    padding-left: 60px;
+    background:transparent;
+    font-size: 2em;
+    color: #999999;
+}
+.input-field::placeholder{
+    color: #183636;
+
+}
+.icon{
+    position:absolute ;
+    left: 0;
+    top:0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: centre;
+    color: #999999;
+    font-size: 1.6em;
+}
+.input-field:focus{
+    color:#ffffff ;
+    border-color: #ffffff;
+}
+.input-field:focus ~ .icon{
+    color:#ffffff;
+
+}
+
