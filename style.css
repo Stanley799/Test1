@@ -135,6 +135,22 @@ button a /*editting the button text*/
 
 
 /*editting the divisions*/
+.contact-div{
+    width: 400px;
+    
+    
+}
+.order-div{
+    width: 300px;
+    
+}
+.about-div{
+    width: 300px;
+   
+}
+.image-div{
+    width: fit-content;
+    vertical-align: top;}
 .image-1{
     width: 300px;
     display: inline-block ;
