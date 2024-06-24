@@ -15,24 +15,19 @@
         padding-left: 10%;
         padding-right: 10%;
         width: 100%;
-        height: 100px;
+        height: 150px;
         background-color: rgba(0, 0, 0, 0.71);
         box-sizing: border-box;
         z-index: 9999;
         padding-top: 0;
         padding-bottom: 5px;
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: space-between;
        }
 /*Adding a hover effect to the navbar only when you point at the links*/
 .main-bar a:hover{
-    background-color: rgba(17, 16, 16, 0.755);
-    border-radius: 40%;
-    height: fit-content;
-    padding-bottom: 0;
-    
-
+   color: rgb(195, 157, 69);
 
 }
 
@@ -54,7 +49,9 @@ ul li:first-child{
     margin-right: auto;
 }
 
-
+ul{
+    margin-left: 100px; margin-bottom: 0px;
+}
     
     ul li a  {/*helps to style the actual text inside the link*/
     text-decoration: none;/*removes the underline on the links*/
@@ -62,16 +59,22 @@ ul li:first-child{
     font-weight: bold;
     margin-right: 25px;
     margin-top:20px ;
+    margin-bottom: 20px;
+    margin-right: 55px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(34, 206, 186);
-    padding:  30px;
+    padding-top: 50%;
     display: flex;
     align-items:center;
     }
+
+    .logo{
+        margin-bottom: 20px;
+    }
     .logo a{
         font-size: 25px; font-weight: bold; color: grey; text-decoration: none;
-    
-    }
+        align-items: start; margin-left: 0px; margin-right: 50px;
+     }
 
 
 
@@ -140,9 +143,11 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 550px;
 }
 
+
+
 button
 {
-    background-color: #2f2412;
+    background-color:#e28743 ;
     border-radius: 25px;
     margin-left: 10px;
     width: 90px;
@@ -152,44 +157,114 @@ button
 }
 button a /*editting the button text*/
 {
-    color: rgb(34, 206, 186);
+    color: rgb(23, 1, 1);
     font-weight: bold;
     font-size: 15px;
     text-decoration: none;
-
 }
 
-
-
+ button:hover{
+    background-color:#bfafa3 ;
+ }
 
 
 /*editting the divisions*/
 .contact-div{
-    width: 400px;
-    margin-top: 80px;
-    height: 100%;
-    
+    width: 100vph;
+    margin-top: 100px;
+    height: 100vph; 
+    margin-right: 50%;
+    margin-left: 40%; 
+    font-size: larger;
 }
+.to-contact-us{
+width: 300px;
+height: 100px;
+
+}
+.call{
+width: 300px;    
+height: 100px;
+}
+.email{
+width: 300px;
+height: 100px;
+}
+
+
 .order-div{
     width: 300px;
     margin-top: 80px;
     
 }
 .about-div{
-    width: 300px;
+    width: 100%;
     margin-top: 80px;
     position: absolute;/*content appears on top of the background image*/
     overflow: auto;
     padding-bottom: 100px;
-    color: #45413f;
+    color: rgb(249, 248, 247);
+    background-color: rgba(0, 0, 0, 0.71);
+    font-size: large;
+}
+.about-image{
+    border-radius: 30%;
+    width: 300px;
+}
+.what-is-stalozran{
+    font-size: x-large;
+    margin-top: 30px;
+    margin-top: 25px;
+    color: rgb(226,135,67);
+}
+
+.logIn{
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 30%;
+    margin-right: 50%;
+
+    outline: 0;
+    border: 2px solid #0be4c0;;
+    border-radius: 3px;
+    padding:10px ;
+    padding-left: 60px;
+    background:transparent;
+    font-size: 2em;
+    color: #999999;
+    background-color:rgba(0, 0, 0, 0.71); 
    
 }
+
+
+.next-button{
+    width: 100%;
+    outline: 0;
+    border: 2px solid rgb(22, 21, 21);
+    border-radius: 3px;
+    padding-top: 0px;
+    padding-left: 60px;
+    background-color:#e28743 ;
+    font-size: 2em;
+    color: rgb(112, 15, 15);
+    font-weight: bold;
+    height: 60px;
+    font-size: larger;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+
+
+}
+
+
 .image-div{
     height: 100%;
     width: fit-content;
     vertical-align: top;
     margin-top: 80px;
     position: absolute;
+
 }
 .image-1{
     width: 300px;
@@ -238,6 +313,7 @@ button a /*editting the button text*/
     width: 600px;
     position: relative;
     margin-top: 100px;
+    
 }
 .input-field{
     width: 100%;
@@ -247,11 +323,11 @@ button a /*editting the button text*/
     padding:10px ;
     padding-left: 60px;
     background:transparent;
-    font-size: 2em;
+    font-size: larger;
     color: #999999;
 }
 .input-field::placeholder{
-    color: #183636;
+    color: #6f6e6e;
 
 }
 .icon{
