@@ -26,8 +26,9 @@
         justify-content: space-between;
        }
 /*Adding a hover effect to the navbar only when you point at the links*/
-.main-bar a:hover{
+.main-bar a:hover {
    color: rgb(195, 157, 69);
+   
 
 }
 
@@ -326,6 +327,22 @@ height: 100px;
     font-size: larger;
     color: #999999;
 }
+.input-field-last{
+    width: 100%;
+    outline: 0;
+    border: 2px solid #999999;
+    border-radius: 3px;
+    padding:10px ;
+    padding-left: 60px;
+    background:transparent;
+    font-size: larger;
+    color: #999999;
+    margin-bottom: 50px;
+
+}
+    
+
+
 .input-field::placeholder{
     color: #6f6e6e;
 
