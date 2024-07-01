@@ -17,6 +17,24 @@
         <nav class="main-bar" ><!--navigation tag to create a bar-->
            
                <div class="logo"><a href="index.html">STALOZRAN</a></div>
+               <!--SIDEBAR-->
+               <ul class="sidebar"> <!--this code develops a list that contains link to all the 7 pages-->
+                   <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                   <li class="hideOnMobile"> <a href='index.html'>Home </a>  </li><!--Link that leads you to the about,contact,gallery,orders,login and hotdeals pages -->
+                   <li class="hideOnMobile"> <a href='about.html'>About </a>  </li>
+                   <li class="hideOnMobile"> <a href='contact.html'>Contact </a>  </li>
+                   <li class="hideOnMobile"> <a href='gallery.html'>Gallery </a>  </li>
+                   <li class="hideOnMobile"> <a href='orders.html'>Orders </a>  </li>
+                   <li class="hideOnMobile"> <a href='shop.html'>Shop </a>  </li>
+                   <button class="hideOnMobile"><a href="login.html">LogIn</a></button>
+                   <button class="hideOnMobile"><a href="signUp.html">SignUp</a></button>
+       
+           </ul>       
+       
+       
+       
+       
+       <!--NAVIGATION BAR-->
                <ul> <!--this code develops a list that contains link to all the 7 pages-->
                        <li> <a href='index.html'>Home </a>  </li><!--Link that leads you to the about,contact,gallery,orders,login and hotdeals pages -->
                        <li> <a href='about.html'>About </a>  </li>
@@ -26,9 +44,23 @@
                        <li> <a href='shop.html'>Shop </a>  </li>
                        <button><a href="login.html">LogIn</a></button>
                        <button><a href="signUp.html">SignUp</a></button>
+                       <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                </ul>       
            </nav>
-        </div>
+        </div> 
+       <!--Java for showing sidebar when you click the icon-->
+       <script>
+       function showSidebar(){
+           const sidebar = document.querySelector('.sidebar')
+           sidebar.style.display = 'flex'
+       }
+       function hideSidebar(){
+           const sidebar = document.querySelector('.sidebar')
+           sidebar.style.display = 'none'
+       }   
+       
+       
+       </script>
 
 <div class="contact-div">
     <div class="to-contact-us"><h1><b>To contact us</b></h1></div>
