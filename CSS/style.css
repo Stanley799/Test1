@@ -6,10 +6,48 @@
  html{
     height: 100%;
  } 
+body{
+min-height: 100vh;
+}
+
+
+
  
     .back-color{
         background-color:rgba(92, 130, 132);
     }
+
+/*SIDEBAR*/
+.sidebar{
+position: fixed;
+top: 0;
+right: 0;
+height: 100vh;
+width: 250px;
+z-index: 999;
+background-color: rgba(0, 0, 0, 0.71);
+backdrop-filter: blur(10px);/*blurs the background of the bar*/
+box-shadow: -10px 0 10px rgba(181, 18, 18, 0.71);
+display: none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+}
+
+.sidebar li{
+width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+    
+ }
+
+
+
+
+
+/*NAVIGATION BAR*/
     .main-bar{ 
         position: fixed;
         padding-left: 10%;
@@ -46,12 +84,12 @@ display: flex; align-items: center; justify-content: space-between;
     display: inline-block;/*puts the links next to each other*/
     line-height:60px;
     }
-ul li:first-child{
+.navigationdiv li:first-child{
     margin-right: auto;
 }
 
 ul{
-    margin-left: 100px; margin-bottom: 0px;
+    margin-left: 80px; margin-bottom: 0px;
 }
     
     ul li a  {/*helps to style the actual text inside the link*/
@@ -66,7 +104,7 @@ ul{
     color: rgb(34, 206, 186);
     padding-top: 50%;
     display: flex;
-    align-items:center;
+    align-items: end;
     }
 
     .logo{
@@ -74,7 +112,7 @@ ul{
     }
     .logo a{
         font-size: 25px; font-weight: bold; color: grey; text-decoration: none;
-        align-items: start; margin-left: 0px; margin-right: 50px;
+        align-items: start; margin-left: 60px; margin-right: 0px;
      }
 
 
@@ -374,4 +412,21 @@ footer{
 
 .main-container{
     min-height: 100%;
+}
+
+
+/*RESPONSIVENESS*/
+@media (min-width:1000px){
+.hideOnMobile{
+    display: none;
+
+}
+
+}
+
+@media(max-width: 400px){
+.sidebar{
+    width:25%;
+}
+
 }
