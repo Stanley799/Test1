@@ -11,21 +11,21 @@
 </head>
 <body class="back-color">
    
-    <div class="navigationdiv">
+<div class="navigationdiv">
         <nav class="main-bar" ><!--navigation tag to create a bar-->
            
-               <div class="logo"><a href="index.html">STALOZRAN</a></div>
+               <div class="logo"><a href="index.php">STALOZRAN</a></div>
                <!--SIDEBAR-->
                <ul class="sidebar"> <!--this code develops a list that contains link to all the 7 pages-->
                    <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                   <li class="hideOnMobile"> <a href='index.html'>Home </a>  </li><!--Link that leads you to the about,contact,gallery,orders,login and hotdeals pages -->
-                   <li class="hideOnMobile"> <a href='about.html'>About </a>  </li>
-                   <li class="hideOnMobile"> <a href='contact.html'>Contact </a>  </li>
-                   <li class="hideOnMobile"> <a href='gallery.html'>Gallery </a>  </li>
-                   <li class="hideOnMobile"> <a href='orders.html'>Orders </a>  </li>
-                   <li class="hideOnMobile"> <a href='shop.html'>Shop </a>  </li>
-                   <button class="hideOnMobile"><a href="login.html">LogIn</a></button>
-                   <button class="hideOnMobile"><a href="signUp.html">SignUp</a></button>
+                   <li class="hideOnMobile"> <a href='index.php'>Home </a>  </li><!--Link that leads you to the about,contact,gallery,orders,login and hotdeals pages -->
+                   <li class="hideOnMobile"> <a href='about.php'>About </a>  </li>
+                   <li class="hideOnMobile"> <a href='contact.php'>Contact </a>  </li>
+                   <li class="hideOnMobile"> <a href='gallery.php'>Gallery </a>  </li>
+                   <li class="hideOnMobile"> <a href='orders.php'>Orders </a>  </li>
+                   <li class="hideOnMobile"> <a href='shop.php'>Shop </a>  </li>
+                   <button class="hideOnMobile"><a href="login.php">LogIn</a></button>
+                   <button class="hideOnMobile"><a href="signUp.php">SignUp</a></button>
        
            </ul>       
        
@@ -34,14 +34,14 @@
        
        <!--NAVIGATION BAR-->
                <ul> <!--this code develops a list that contains link to all the 7 pages-->
-                       <li> <a href='index.html'>Home </a>  </li><!--Link that leads you to the about,contact,gallery,orders,login and hotdeals pages -->
-                       <li> <a href='about.html'>About </a>  </li>
-                       <li> <a href='contact.html'>Contact </a>  </li>
-                       <li> <a href='gallery.html'>Gallery </a>  </li>
-                       <li> <a href='orders.html'>Orders </a>  </li>
-                       <li> <a href='shop.html'>Shop </a>  </li>
-                       <button><a href="login.html">LogIn</a></button>
-                       <button><a href="signUp.html">SignUp</a></button>
+                       <li> <a href='index.php'>Home </a>  </li><!--Link that leads you to the about,contact,gallery,orders,login and hotdeals pages -->
+                       <li> <a href='about.php'>About </a>  </li>
+                       <li> <a href='contact.php'>Contact </a>  </li>
+                       <li> <a href='gallery.php'>Gallery </a>  </li>
+                       <li> <a href='orders.php'>Orders </a>  </li>
+                       <li> <a href='shop.php'>Shop </a>  </li>
+                       <button><a href="login.php">LogIn</a></button>
+                       <button><a href="signUp.php">SignUp</a></button>
                        <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                </ul>       
            </nav>
@@ -59,20 +59,15 @@
        
        
        </script>
-    
+
 
 <div class="logIn"> 
     <p><h2>LogIn</h2></p>   
 
  <div class="field-group">
-    <input type="text" name="name" class="input-field" placeholder="Enter First Name" autocomplete="off">
-    <div class="icon"><!--for adding the name icon-->
-        <i class="user" aria-hidden="true"></i>
-    </div>
-    <input type="text" name="name" class="input-field" placeholder="Enter Second Name" autocomplete="off">
-
     <input type="text" class="input-field" placeholder="Enter Email Address">
-    <input type="text" class="input-field-last" placeholder="Enter Phone Number">
+    <input type="text" class="input-field" placeholder="Enter Phone Number">
+    <button class="next-button">Next</button>
  </div>    
 </div> 
 
