@@ -1,6 +1,7 @@
 *{
   text-decoration: none;
-    
+margin: 0;
+padding: 0;
     
     }
  html{
@@ -13,108 +14,101 @@ min-height: 100vh;
 
 
  
-    .back-color{
-        background-color:rgba(92, 130, 132);
-    }
-
-/*SIDEBAR*/
-.sidebar{
-position: fixed;
-top: 0;
-right: 0;
-height: 100vh;
-width: 250px;
-z-index: 999;
-background-color: rgba(0, 0, 0, 0.71);
-backdrop-filter: blur(10px);/*blurs the background of the bar*/
-box-shadow: -10px 0 10px rgba(181, 18, 18, 0.71);
-display: none;
-flex-direction: column;
-align-items: flex-start;
-justify-content: flex-start;
+.back-color{
+    background-color:rgb(21, 17, 17);
 }
 
-.sidebar li{
-width: 100%;
+/*NAVIGATION*/
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+
+}
+.logo{
+    margin: 1rem;
+    color: rgb(237, 234, 233);
+    font-weight: bolder;
+}
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.sidebar{
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsla(0, 0%, 5%, 0.4);
+    backdrop-filter: blur(1rem);
+    
 
 }
 .sidebar a{
-    width: 100%;
+    text-decoration: none;
+    color: rgb(220, 225, 226);
+    font-weight: bold;
     
- }
+  
+}
+.mobile-nav-toggle{
+    display: none;
+}
+
+
+
+.sr-only {
+/*hides from viewers but shows items to screen readers*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+
+
+/*responsiveness*/
+@media (max-width: 35em) {
+    .sidebar{
+        --gap:1.5em;
+
+       position: fixed; 
+       z-index:1000 ;
+       inset: 0 0 0 40%;/*inset means top bottom left and right margin*/
+       flex-direction: column;
+       padding:min(10vh, 10rem) 2rem ;
+       align-items: flex-start;
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;/*makes it appear on top*/
+        background: url(Icons/menu.svg);
+        background-repeat: no-repeat;
+        border: 0;
+        width: 2rem;
+        aspect-ratio: 1;/*width and height are the same*/
+        top: 1.5rem;
+        right: 2rem;
+    }
+
+}
 
 
 
 
-
-/*NAVIGATION BAR*/
-    .main-bar{ 
-        position: fixed;
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 100%;
-        height: 150px;
-        background-color: rgba(0, 0, 0, 0.71);
-        box-sizing: border-box;
-        z-index: 9999;
-        padding-top: 0;
-        padding-bottom: 5px;
-        display: flex;
-        align-items: end;
-        justify-content: space-between;
-       }
 /*Adding a hover effect to the navbar only when you point at the links*/
 .main-bar a:hover {
-   color: rgb(195, 157, 69);
+color: rgb(14, 14, 14);
+background-color: #999999;
    
 
 }
-
-
-.navigationdiv/*edits the division for the navigation*/
-{
-display: flex; align-items: center; justify-content: space-between;
-
-}
-
-   .navigationdiv ul li {/*list item that helps to move to the individual links inside the list*/
-    list-style: none;
-    height:100px;
-
-    display: inline-block;/*puts the links next to each other*/
-    line-height:60px;
-    }
-.navigationdiv li:first-child{
-    margin-right: auto;
-}
-
-ul{
-    margin-left: 80px; margin-bottom: 0px;
-}
-    
-    ul li a  {/*helps to style the actual text inside the link*/
-    text-decoration: none;/*removes the underline on the links*/
-    font-size: 13px;
-    font-weight: bold;
-    margin-right: 25px;
-    margin-top:20px ;
-    margin-bottom: 20px;
-    margin-right: 55px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(34, 206, 186);
-    padding-top: 50%;
-    display: flex;
-    align-items: end;
-    }
-
-    .logo{
-        margin-bottom: 20px;
-    }
-    .logo a{
-        font-size: 25px; font-weight: bold; color: grey; text-decoration: none;
-        align-items: start; margin-left: 60px; margin-right: 0px;
-     }
-
 
 
 
@@ -414,19 +408,3 @@ footer{
     min-height: 100%;
 }
 
-
-/*RESPONSIVENESS*/
-@media (min-width:1000px){
-.hideOnMobile{
-    display: none;
-
-}
-
-}
-
-@media(max-width: 400px){
-.sidebar{
-    width:25%;
-}
-
-}
