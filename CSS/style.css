@@ -153,7 +153,7 @@ body p
 /*for the headings */
 .Heading-1 
 {
-color: #2D2305;
+color: #e94646;
 position:absolute;/*makes it appear over the background image*/
 border-top: 50%;
 width: 100%;
@@ -162,21 +162,24 @@ margin-top: 100px;
 font-weight: 1000px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.Heading-2
+/*for the headings */
+.Heading-1 
 {
-    color: #2D2305;
-    position:absolute;
-    border-top: 50%;
-    width: 100%;
-    text-align:left;
-    margin-top: 550px;
+color: #e94646;
+position:absolute;/*makes it appear over the background image*/
+border-top: 50%;
+width: 100%;
+text-align:left;
+margin-top: 100px;
+font-weight: 1000px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 
 button
 {
-    background-color:#e28743 ;
+    background-color:#e94646 ;
     border-radius: 25px;
     margin-left: 10px;
     width: 90px;
@@ -226,6 +229,7 @@ height: 100px;
     margin-top: 80px;
     
 }
+
 .about-div{
     width: 100%;
     margin-top: 80px;
